@@ -137,6 +137,10 @@ const App = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow container mx-auto p-6">
+      <section className="text-center mb-10">
+          <h2 className="text-3xl font-bold text-gray-800">My Projects</h2>
+          <p className="mt-2 text-lg text-gray-600">A showcase of my front-end development work</p>
+        </section>
         {Object.entries(projectsByCategory).map(([category, projects]) => (
           <section key={category} className="mb-10">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">{category}</h2>
