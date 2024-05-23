@@ -1,0 +1,127 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7fafc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #38b2ac;
+}
+
+///////////////////////////////////////////////////////////////////
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  color: #2d3748;
+}
+
+.card-description {
+  color: #4a5568;
+  font-style: italic;
+}
+
+.card-link {
+  background-color: #38b2ac;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.card-link:hover {
+  background-color: #319795;
+} */
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7fafc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #38b2ac;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  color: #2d3748;
+}
+
+.card-description {
+  color: #4a5568;
+  font-style: italic;
+}
+
+.card-link {
+  display: inline-block;
+  background-color: #38b2ac;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.card-link:hover {
+  background-color: #319795;
+  color: #fffacd; /* Change text color on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.card-link:hover::before {
+  transform: scaleX(1);
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
