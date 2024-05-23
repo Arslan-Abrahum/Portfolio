@@ -72,48 +72,54 @@ import React from 'react';
 import Header from './components/Header';
 import ProjectCard from './components/ProjectCard';
 import Footer from './components/Footer';
+import Photographer1 from "./assets/girl-theme.png"
+import Photographer2 from "./assets/grid-theme.png"
+import CatchInsect from "./assets/insect.png";
+import PaysBill from "./assets/pays-bill.png"
+import Aero from "./assets/aero-1.png"
+import MovieProject from "./assets/movie-app.png"
 
 const projects = [
   {
-    title: 'Helion 2nd Page Clone',
-    description: 'A detailed clone of the second page of the Helion website, showcasing advanced HTML and CSS skills.',
+    title: 'Helion Photographer 2',
+    description: 'A detailed clone of the Photographer 2 page of the Helion website, showcasing advanced HTML and CSS skills.',
     link: 'https://arslan-abrahum.github.io/helion-2nd-page-clone/',
-    image: 'https://via.placeholder.com/400x200?text=Helion+2nd+Page+Clone',
+    image: Photographer2,
     category: 'HTML/CSS'
   },
   {
-    title: 'Helion 3rd Page Clone',
-    description: 'A meticulous clone of the third page of the Helion website, demonstrating proficiency in HTML and CSS.',
+    title: "Helion Photographer 1",
+    description: 'A meticulous clone of the  Photographer 1 page of the Helion website, demonstrating proficiency in HTML and CSS.',
     link: 'https://arslan-abrahum.github.io/helion-3rd-page-clone/',
-    image: 'https://via.placeholder.com/400x200?text=Helion+3rd+Page+Clone',
+    image: Photographer1,
     category: 'HTML/CSS'
   },
   {
-    title: 'Wonderful Bunny',
+    title: 'Catch Insect',
     description: 'An interactive JavaScript project featuring engaging animations and user interactions.',
     link: 'https://wonderful-bunny-ec9090.netlify.app/',
-    image: 'https://via.placeholder.com/400x200?text=Wonderful+Bunny',
+    image: CatchInsect,
     category: 'JavaScript'
   },
   {
     title: 'Who Pays the Bill',
     description: 'A React app that helps groups decide who pays the bill, showcasing state management and component design.',
     link: 'https://who-pays-the-bill-9328.netlify.app',
-    image: 'https://via.placeholder.com/400x200?text=Who+Pays+the+Bill',
+    image: PaysBill,
     category: 'React.js'
   },
   {
     title: 'Aero Landing Page',
     description: 'A sleek and modern landing page created with React, emphasizing responsive design and aesthetics.',
     link: 'https://arslan-abrahum.github.io/aero-landing-page/',
-    image: 'https://via.placeholder.com/400x200?text=Aero+Landing+Page',
+    image: Aero,
     category: 'React.js'
   },
   {
     title: 'Movie ViteReact App',
     description: 'A dynamic movie application built with Vite and React, demonstrating API integration and dynamic rendering.',
     link: 'https://movie-vitereact-app.netlify.app/',
-    image: 'https://via.placeholder.com/400x200?text=Movie+ViteReact+App',
+    image: MovieProject,
     category: 'React.js'
   },
 ];
